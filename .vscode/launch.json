@@ -79,6 +79,14 @@
             "type": "dart",
             "program": "lib/funcoes/recursive_function.dart",
             "console": "terminal"
+        },
+        {
+            "name": "Try_Catch_01",
+            "cwd": "Modulo_02\\modulo02",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/Try_Catch/aula01.dart",
+            "console": "terminal"
         }
     ]
 }
