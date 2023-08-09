@@ -1,1 +1,1 @@
-enum TipoNotificacao { SMS, PUSH_NOTIFICATION, EMAIL, NENHUM }
+enum TipoNotificacao { sms, pushNotification, email, nenhum }

@@ -14,7 +14,7 @@ class PessoaJuridica extends Pessoa {
   }
 
   PessoaJuridica(String nome, String endereco, String cnpj,
-      {TipoNotificacao tipoNotificacao = TipoNotificacao.NENHUM})
+      {TipoNotificacao tipoNotificacao = TipoNotificacao.nenhum})
       : super(nome, endereco, tipoNotificacao: tipoNotificacao) {
     _cnpj = cnpj;
   }

@@ -3,7 +3,7 @@ import 'package:poo_project/service/notificacao_interface.dart';
 
 class NotificacaoSMS implements NotificacaoInterface {
   @override
-  void EnviarNotificacao(Pessoa pessoa) {
+  void enviarNotificacao(Pessoa pessoa) {
     print("Enviando SMS para ${pessoa.getNome()}");
   }
 }

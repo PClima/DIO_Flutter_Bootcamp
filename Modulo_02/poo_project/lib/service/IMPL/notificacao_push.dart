@@ -3,7 +3,7 @@ import 'package:poo_project/service/notificacao_interface.dart';
 
 class NotificacaoPush implements NotificacaoInterface {
   @override
-  void EnviarNotificacao(Pessoa pessoa) {
+  void enviarNotificacao(Pessoa pessoa) {
     print("Enviando Push para ${pessoa.getNome()}");
   }
 }

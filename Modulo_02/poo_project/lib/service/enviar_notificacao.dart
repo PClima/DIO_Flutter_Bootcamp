@@ -10,22 +10,22 @@ class EnviarNotificacao {
 
   void notificar(Pessoa pessoa) {
     switch (pessoa.getTipoNotificacao()) {
-      case TipoNotificacao.EMAIL:
+      case TipoNotificacao.email:
         notificacao = NotificacaoEmail();
         break;
 
-      case TipoNotificacao.PUSH_NOTIFICATION:
+      case TipoNotificacao.pushNotification:
         notificacao = NotificacaoPush();
         break;
 
-      case TipoNotificacao.SMS:
+      case TipoNotificacao.sms:
         notificacao = NotificacaoSMS();
         break;
       default:
         return;
     }
     if (notificacao != null) {
-      notificacao!.EnviarNotificacao(pessoa);
+      notificacao!.enviarNotificacao(pessoa);
     }
   }
 }

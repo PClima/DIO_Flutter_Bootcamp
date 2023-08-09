@@ -8,7 +8,7 @@ void main(List<String> arguments) {
   print(pf1);
 
   var pj1 = PessoaJuridica("Pedro", "Rua 1", "37128372615",
-      tipoNotificacao: TipoNotificacao.SMS);
+      tipoNotificacao: TipoNotificacao.sms);
   print(pj1);
 
   EnviarNotificacao enviarNotificacao = EnviarNotificacao();

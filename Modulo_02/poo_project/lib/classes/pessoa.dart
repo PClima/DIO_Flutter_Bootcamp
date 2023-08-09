@@ -6,7 +6,7 @@ abstract class Pessoa {
   String _email = "";
   String _celular = "";
   String _token = "";
-  TipoNotificacao _tipoNotificacao = TipoNotificacao.NENHUM;
+  TipoNotificacao _tipoNotificacao = TipoNotificacao.nenhum;
 
   void setNome(String nome) {
     _nome = nome;
@@ -57,7 +57,7 @@ abstract class Pessoa {
   }
 
   Pessoa(String nome, String endereco,
-      {TipoNotificacao tipoNotificacao = TipoNotificacao.NENHUM}) {
+      {TipoNotificacao tipoNotificacao = TipoNotificacao.nenhum}) {
     _nome = nome;
     _endereco = endereco;
     _tipoNotificacao = tipoNotificacao;
