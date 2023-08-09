@@ -1,0 +1,84 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "dio_project_01",
+            "cwd": "Modulo_01\\dio_project_01",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "dio_project_01 (profile mode)",
+            "cwd": "Modulo_01\\dio_project_01",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "dio_project_01 (release mode)",
+            "cwd": "Modulo_01\\dio_project_01",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "loops",
+            "cwd": "Modulo_02\\modulo02",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/loops/loops.dart",
+            "console": "terminal"
+        },
+        {
+            "name": "tipos",
+            "cwd": "Modulo_02\\modulo02",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/tipos/tipos.dart",
+            "console": "terminal"
+        },
+        {
+            "name": "funcoes",
+            "cwd": "Modulo_02\\modulo02",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/funcoes/funcoes.dart",
+            "console": "terminal"
+        },
+        {
+            "name": "condicionais",
+            "cwd": "Modulo_02\\modulo02",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/condicionais/condicionais.dart",
+            "console": "terminal"
+        },
+        {
+            "name": "calculator",
+            "cwd": "Modulo_02\\modulo02",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/calculadora/calculator.dart",
+            "console": "terminal"
+        },
+        {
+            "name": "function_calculator",
+            "cwd": "Modulo_02\\modulo02",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/calculadora/function_calculator.dart",
+            "console": "terminal"
+        },
+        {
+            "name": "recursive_function",
+            "cwd": "Modulo_02\\modulo02",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/funcoes/recursive_function.dart",
+            "console": "terminal"
+        }
+    ]
+}
