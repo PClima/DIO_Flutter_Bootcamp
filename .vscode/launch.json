@@ -1,7 +1,4 @@
 {
-    // Use o IntelliSense para saber mais sobre os atributos possíveis.
-    // Focalizar para exibir as descrições dos atributos existentes.
-    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -87,6 +84,22 @@
             "type": "dart",
             "program": "lib/Try_Catch/aula01.dart",
             "console": "terminal"
+        },
+        {
+            "name": "Projeto 01",
+            "program": "lib/main.dart",
+            "cwd": "Modulo_01\\dio_project_01",
+            "deviceId": "emulator-5554",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Projeto 02",
+            "program": "lib/main.dart",
+            "cwd": "Modulo_03\\trilhaapp",
+            "deviceId": "emulator-5554",
+            "request": "launch",
+            "type": "dart"
         }
     ]
 }
