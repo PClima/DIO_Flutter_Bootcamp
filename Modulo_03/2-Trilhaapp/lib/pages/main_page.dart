@@ -40,10 +40,8 @@ class _MainPageState extends State<MainPage> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const DadosCadastrais(
-                                        texto: "Meus Dados",
-                                        dados: [],
-                                      )));
+                                  builder: (context) =>
+                                      const DadosCadastrais()));
                         },
                         child: const Text("Dados Cadastrais"))),
                 const Divider(),
