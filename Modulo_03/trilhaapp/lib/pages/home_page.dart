@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:trilhaapp/service/random_number.dart';
@@ -46,19 +44,36 @@ class _HomePageState extends State<HomePage> {
               style: GoogleFonts.acme(fontSize: 20),
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  "10",
-                  style: GoogleFonts.acme(fontSize: 20),
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    color: Colors.red,
+                    child: Text(
+                      "Nome:",
+                      style: GoogleFonts.acme(fontSize: 20),
+                    ),
+                  ),
                 ),
-                Text(
-                  "20",
-                  style: GoogleFonts.acme(fontSize: 20),
+                Expanded(
+                  flex: 3,
+                  child: Container(
+                    color: Colors.blue,
+                    child: Text(
+                      "Pedro Cordeiro",
+                      style: GoogleFonts.acme(fontSize: 20),
+                    ),
+                  ),
                 ),
-                Text(
-                  "30",
-                  style: GoogleFonts.acme(fontSize: 20),
+                Expanded(
+                  flex: 2,
+                  child: Container(
+                    color: Colors.green,
+                    child: Text(
+                      "30",
+                      style: GoogleFonts.acme(fontSize: 20),
+                    ),
+                  ),
                 )
               ],
             )

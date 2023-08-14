@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       //Definir cores do tema
       theme: ThemeData(
-          primarySwatch: Colors.red, textTheme: GoogleFonts.robotoTextTheme()),
+          primarySwatch: Colors.blue, textTheme: GoogleFonts.robotoTextTheme()),
       home: const LoginPage(),
     );
   }
