@@ -1,7 +1,5 @@
 import 'dart:math';
 
-import 'package:flutter/material.dart';
-
 class Pessoa {
   String _nome = "";
   double _peso = 0.0;
