@@ -108,6 +108,6 @@
             "deviceId": "emulator-5554",
             "request": "launch",
             "type": "dart"
-        }
+        },
     ]
 }
