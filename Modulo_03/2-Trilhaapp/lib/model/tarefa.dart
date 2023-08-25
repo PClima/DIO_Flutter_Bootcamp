@@ -7,12 +7,6 @@ class Tarefa {
 
   Tarefa(this._descricao, this._concluido);
 
-  String get id => _id;
-
-  String get descricao => _descricao;
-
-  bool get concluido => _concluido;
-
   set descricao(String descricao) {
     _descricao = descricao;
   }
@@ -20,4 +14,10 @@ class Tarefa {
   set concluido(bool concluido) {
     _concluido = concluido;
   }
+
+  String get id => _id;
+
+  String get descricao => _descricao;
+
+  bool get concluido => _concluido;
 }

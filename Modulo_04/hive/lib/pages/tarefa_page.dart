@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:trilhaapp/model/tarefa_model.dart';
 import 'package:trilhaapp/repositories/tarefa_hive_repository.dart';

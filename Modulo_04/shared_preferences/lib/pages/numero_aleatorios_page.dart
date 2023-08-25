@@ -16,7 +16,6 @@ class _NumerosAleatoriosPageState extends State<NumerosAleatoriosPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     carregarDados();
   }

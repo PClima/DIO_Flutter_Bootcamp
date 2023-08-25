@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trilhaapp/model/configuracoes_model.dart';
 import 'package:trilhaapp/repositories/configuracoes_repository.dart';
-import 'package:trilhaapp/service/app_storage.dart';
 
 class ConfiguracoesPage extends StatefulWidget {
   const ConfiguracoesPage({super.key});
@@ -19,7 +18,6 @@ class _ConfiguracoesPageState extends State<ConfiguracoesPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     carregarDados();
   }
@@ -40,79 +38,76 @@ class _ConfiguracoesPageState extends State<ConfiguracoesPage> {
         appBar: AppBar(
           title: const Text("Configurações"),
         ),
-        body: Container(
-          child: ListView(
-            children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: TextField(
-                  onTapOutside: (event) {
-                    FocusManager.instance.primaryFocus?.unfocus();
-                  },
-                  decoration:
-                      const InputDecoration(hintText: "Nome do Usuário"),
-                  controller: nomeUsuarioController,
-                ),
+        body: ListView(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: TextField(
+                onTapOutside: (event) {
+                  FocusManager.instance.primaryFocus?.unfocus();
+                },
+                decoration: const InputDecoration(hintText: "Nome do Usuário"),
+                controller: nomeUsuarioController,
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: TextField(
-                  onTapOutside: (event) {
-                    FocusManager.instance.primaryFocus?.unfocus();
-                  },
-                  keyboardType: TextInputType.number,
-                  decoration: const InputDecoration(hintText: "Altura"),
-                  controller: alturaController,
-                ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: TextField(
+                onTapOutside: (event) {
+                  FocusManager.instance.primaryFocus?.unfocus();
+                },
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(hintText: "Altura"),
+                controller: alturaController,
               ),
-              SwitchListTile(
-                  title: const Text("Receber Notificações"),
-                  value: configuracoesModel.receberNotificacoes,
-                  onChanged: (bool value) {
-                    setState(() {
-                      configuracoesModel.receberNotificacoes = value;
-                    });
-                  }),
-              const Divider(),
-              SwitchListTile(
-                  title: const Text("Tema Escuro"),
-                  value: configuracoesModel.darkMode,
-                  onChanged: (bool value) {
-                    setState(() {
-                      configuracoesModel.darkMode = value;
-                    });
-                  }),
-              TextButton(
-                  onPressed: () async {
-                    try {
-                      configuracoesModel.altura =
-                          double.parse(alturaController.text);
-                    } catch (e) {
-                      showDialog(
-                          context: context,
-                          builder: (_) {
-                            return AlertDialog(
-                              title: const Text("Meu App"),
-                              content: const Text(
-                                  "Favor informar uma altura válida"),
-                              actions: [
-                                TextButton(
-                                    onPressed: () {
-                                      Navigator.pop(context);
-                                    },
-                                    child: const Text("Ok"))
-                              ],
-                            );
-                          });
-                      return;
-                    }
-                    configuracoesModel.nomeUsuario = nomeUsuarioController.text;
-                    configuracoesRepository.salvar(configuracoesModel);
-                    Navigator.pop(context);
-                  },
-                  child: const Text("Salvar"))
-            ],
-          ),
+            ),
+            SwitchListTile(
+                title: const Text("Receber Notificações"),
+                value: configuracoesModel.receberNotificacoes,
+                onChanged: (bool value) {
+                  setState(() {
+                    configuracoesModel.receberNotificacoes = value;
+                  });
+                }),
+            const Divider(),
+            SwitchListTile(
+                title: const Text("Tema Escuro"),
+                value: configuracoesModel.darkMode,
+                onChanged: (bool value) {
+                  setState(() {
+                    configuracoesModel.darkMode = value;
+                  });
+                }),
+            TextButton(
+                onPressed: () async {
+                  try {
+                    configuracoesModel.altura =
+                        double.parse(alturaController.text);
+                  } catch (e) {
+                    showDialog(
+                        context: context,
+                        builder: (_) {
+                          return AlertDialog(
+                            title: const Text("Meu App"),
+                            content:
+                                const Text("Favor informar uma altura válida"),
+                            actions: [
+                              TextButton(
+                                  onPressed: () {
+                                    Navigator.pop(context);
+                                  },
+                                  child: const Text("Ok"))
+                            ],
+                          );
+                        });
+                    return;
+                  }
+                  configuracoesModel.nomeUsuario = nomeUsuarioController.text;
+                  configuracoesRepository.salvar(configuracoesModel);
+                  Navigator.pop(context);
+                },
+                child: const Text("Salvar"))
+          ],
         ),
       ),
     );

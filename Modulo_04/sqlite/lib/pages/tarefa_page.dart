@@ -1,8 +1,8 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
-import 'package:trilhaapp/model/tarefa_model.dart';
 import 'package:trilhaapp/model/tarefa_sqlite_model.dart';
 import 'package:trilhaapp/repositories/sqlite/tarefa_sqlite_repository.dart';
-import 'package:trilhaapp/repositories/tarefa_hive_repository.dart';
 
 class TarefaPage extends StatefulWidget {
   const TarefaPage({super.key});
