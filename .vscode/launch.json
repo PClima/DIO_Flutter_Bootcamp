@@ -109,5 +109,21 @@
             "request": "launch",
             "type": "dart"
         },
+        {
+            "name": "shared_preferences",
+            "program": "lib/main.dart",
+            "cwd": "Modulo_04\\shared_preferences",
+            "deviceId": "emulator-5554",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "hive",
+            "program": "lib/main.dart",
+            "cwd": "Modulo_04\\hive",
+            "deviceId": "emulator-5554",
+            "request": "launch",
+            "type": "dart"
+        },
     ]
 }
