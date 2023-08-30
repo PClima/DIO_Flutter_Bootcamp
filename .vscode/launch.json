@@ -132,6 +132,14 @@
             "deviceId": "emulator-5554",
             "request": "launch",
             "type": "dart"
+        },
+        {
+            "name": "imc_calculator_sqlite",
+            "program": "lib/main.dart",
+            "cwd": "Modulo_04\\imc_calculator",
+            "deviceId": "emulator-5554",
+            "request": "launch",
+            "type": "dart"
         }
     ]
 }
