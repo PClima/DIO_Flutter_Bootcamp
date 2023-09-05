@@ -140,6 +140,14 @@
             "deviceId": "emulator-5554",
             "request": "launch",
             "type": "dart"
+        },
+        {
+            "name": "http",
+            "program": "lib/main.dart",
+            "cwd": "Modulo_05\\http",
+            "deviceId": "emulator-5554",
+            "request": "launch",
+            "type": "dart"
         }
     ]
 }
